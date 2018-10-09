@@ -33,6 +33,10 @@
 				 typescript-mode
 				 prettier-js
 				 nodejs-repl
+				 elpy
+				 flycheck
+				 company-jedi
+				 virtualenvwrapper
 				 exec-path-from-shell
 				 popwin
 				 
@@ -72,6 +76,14 @@
        auto-mode-alist))
 
 (global-company-mode t)
+;; 补全后端使用anaconda
+(add-to-list 'company-backends '(company-anaconda :with company-yasnippet))
+;; 补全快捷键
+(global-set-key (kbd "<C-tab>") 'company-complete)
+;; 补全菜单选项快捷键
+(define-key company-active-map (kbd "C-n") 'company-select-next)
+(define-key company-active-map (kbd "C-p") 'company-select-previous)
+
 
 (require 'popwin)    ;;when require, wh(setq company-minimum-prefix-length 1)en not require
 (popwin-mode t)

@@ -2,7 +2,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
-(require 'init-packages)
+;;(require 'init-packages)
 
 (defun open-my-init-file()
   (interactive)
@@ -37,6 +37,9 @@
 
 ;;加载JavaScript模式
 (require 'init-javascript)
+
+;;加载python模式
+;;(require 'init-python)
 
 ;;设置自定义文件
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))

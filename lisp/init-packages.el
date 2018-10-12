@@ -37,9 +37,10 @@
 				 flycheck
 				 company-jedi
 				 virtualenvwrapper
+				 py-autopep8
+				 anaconda-mode
 				 exec-path-from-shell
 				 popwin
-				 
 				 )  "Default packages")
 
 (setq package-selected-packages liang/packages)

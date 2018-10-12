@@ -39,7 +39,7 @@
 (require 'init-javascript)
 
 ;;加载python模式
-;;(require 'init-python)
+(require 'init-python)
 
 ;;设置自定义文件
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
